@@ -34,7 +34,7 @@ app.get('/room', (req, res)=>{
 
 //get booked customers room information: 
 
-app.get('/customers', (req, res)=>{
+app.get('/all/customers', (req, res)=>{
     res.send(customers)
 })
 //================================================================================================
@@ -71,7 +71,7 @@ app.post('/customers', (req, res) => {
   }
 });
 
-app.get('/customers',(req, res) => {
+app.get('/all/customers',(req, res) => {
     res.send(customers)
 })
 
